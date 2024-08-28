@@ -7,10 +7,10 @@ export const Layout = () => {
         Header
         <ul>
           <li>
-            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"/"}>Hem</NavLink>
           </li>
           <li>
-            <NavLink to={"/animals"}>Animals</NavLink>
+            <NavLink to={"/animals"}>Djur</NavLink>
           </li>
         </ul>
       </header>
