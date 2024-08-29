@@ -1,5 +1,10 @@
+// Style folder
 @import "./style/reset";
+@import "./style/global";
+// Pages folder
 @import "./pages/index";
+// Components
+@import "./components/index";
 
 // :root {
 //   color-scheme: light dark;
