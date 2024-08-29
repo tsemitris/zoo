@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { getAnimals } from "../../services/animalsService";
 import { AnimalsPresentation } from "../../components/AnimalsPresentation";
-import { IAnimal } from "../../models/IAnimal";
+import { IAnimalExt } from "../../models/IAnimalExt";
+import { LoadingSpinner } from "../../components/LoadingSpinner/LoadingSpinner";
 
 export const Animals = () => {
-  const [animals, setAnimals] = useState<IAnimal[]>(
+  const [animals, setAnimals] = useState<IAnimalExt[]>(
     JSON.parse(sessionStorage.getItem("animals") || "[]")
   );
   const [fetching, setFetch] = useState(false);
@@ -30,7 +31,7 @@ export const Animals = () => {
   return (
     <>
       {fetching ? (
-        <h2>Loading...</h2>
+        <LoadingSpinner></LoadingSpinner>
       ) : (
         <AnimalsPresentation animals={animals}></AnimalsPresentation>
       )}
