@@ -1,0 +1,42 @@
+header {
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  z-index: 50;
+  background-color: white;
+  border-bottom: 1px solid black;
+  color: #003049;
+  padding: 0.313rem 5vw;
+  display: flex;
+  align-items: center;
+
+  .website-logo {
+    height: 100%;
+  }
+
+  .nav-bar {
+    margin-left: 50px;
+
+    .nav-link {
+      height: 100%;
+      color: #003049;
+      font-weight: 400;
+      margin-right: 15px;
+      padding: 5px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+main {
+  padding-top: 10vh;
+  flex: auto;
+}
+
+footer {
+  flex: initial;
+  background-color: #003049;
+  color: white;
+  height: 500px;
+}
