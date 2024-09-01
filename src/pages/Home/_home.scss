@@ -1,0 +1,159 @@
+.welcome-video-container {
+  height: 700px;
+  position: relative;
+
+  .welcome-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+
+  .welcome-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    .title {
+      font-size: 5rem;
+      font-weight: 400;
+    }
+
+    .under-text {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.scroll-boxes-section {
+  height: fit-content;
+  // background-color: #003049;
+  padding: 10vh 0;
+
+  .scrollable-container {
+    margin: 0 auto;
+    width: 874px;
+    height: 100%;
+    position: relative;
+
+    .items-container {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(12, 5.95rem);
+      gap: 1rem;
+      overflow-x: scroll;
+      // background-color: blue;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      .animal-container {
+        grid-column: span 2;
+        height: 300px;
+        background-color: red;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 1rem;
+      }
+    }
+
+    .scroll-previous-btn,
+    .scroll-next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0;
+    }
+
+    .scroll-previous-btn {
+      left: -20px;
+
+      .previous-btn {
+        height: 40px;
+        width: 40px;
+        background-image: url("/icons/Arrow.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #003049;
+        border-radius: 50%;
+        border: 0;
+        appearance: none;
+        transform: rotate(180deg);
+        cursor: pointer;
+      }
+    }
+
+    .scroll-next-btn {
+      right: -20px;
+
+      .next-btn {
+        height: 40px;
+        width: 40px;
+        background-image: url("/icons/Arrow.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #003049;
+        border-radius: 50%;
+        border: 0;
+        appearance: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.info-section {
+  height: 1000px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .info-container {
+    width: 600px;
+    background-color: #003049;
+    color: white;
+    padding: 50px 60px;
+    margin: 0 10vw;
+    font-size: 1.3rem;
+    font-weight: 300;
+    hyphens: auto;
+    position: absolute;
+
+    .info-writter {
+      margin-top: 20px;
+      display: block;
+    }
+  }
+
+  .info-image,
+  .review-image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+  }
+
+  .info-image {
+    background-image: url("/images/boy-pedding-animals.jpg");
+  }
+
+  .review-image {
+    background-image: url("/images/women-watch-a-giraffe.jpg");
+  }
+}
