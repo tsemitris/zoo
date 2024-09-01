@@ -29,6 +29,9 @@ export const Layout = () => {
           <NavLink className="nav-link" to={"/about-us"}>
             Om oss
           </NavLink>
+          <NavLink className="nav-link" to={"/faq"}>
+            Vanliga frågor
+          </NavLink>
         </nav>
       </header>
       <main>
@@ -171,7 +174,7 @@ export const Layout = () => {
               <Link className="category-link" to={"/about-us"}>
                 Om Oss
               </Link>
-              <Link className="category-link" to={"/"}>
+              <Link className="category-link" to={"/faq"}>
                 Vanliga Frågor (FAQ)
               </Link>
               <Link className="category-link" to={"/"}>
