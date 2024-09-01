@@ -26,6 +26,9 @@ export const Layout = () => {
           <NavLink className="nav-link" to={"/animals"}>
             Djur
           </NavLink>
+          <NavLink className="nav-link" to={"/about-us"}>
+            Om oss
+          </NavLink>
         </nav>
       </header>
       <main>
@@ -165,7 +168,7 @@ export const Layout = () => {
               <Link className="category-link" to={"/"}>
                 Karta
               </Link>
-              <Link className="category-link" to={"/"}>
+              <Link className="category-link" to={"/about-us"}>
                 Om Oss
               </Link>
               <Link className="category-link" to={"/"}>
