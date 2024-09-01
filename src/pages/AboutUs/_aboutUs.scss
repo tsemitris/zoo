@@ -2,33 +2,6 @@
   margin: 3.25rem auto 6.25rem auto;
   width: 40vw;
 
-  .go-back-btn {
-    position: relative;
-    left: -10px;
-    background-color: transparent;
-    appearance: none;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    .go-back-icon {
-      width: 20px;
-      height: 20px;
-      background-color: black;
-      margin-right: 10px;
-      mask-image: url("/icons/Arrow.svg");
-      mask-position: center center;
-      mask-repeat: no-repeat;
-      mask-size: cover;
-      transform: rotate(-180deg);
-    }
-  }
-
   .page-title {
     text-transform: uppercase;
     font-weight: 600;
