@@ -57,6 +57,8 @@ export const AnimalsPresentation = ({ animals }: IAnimalsPresentationProps) => {
                 className="animal-image"
                 src={animal?.imageUrl}
                 alt={animal?.name}
+                width={100}
+                height={100}
                 loading="lazy"
                 onError={handleImageNotFound}
               />
