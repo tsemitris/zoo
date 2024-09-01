@@ -8,8 +8,6 @@ import { formatDate } from "../../utils/formatDate";
 import { timePassChecker } from "../../utils/timePassChecker";
 
 export const Animal = () => {
-  window.scrollTo(0, 0);
-
   const animal = useLoaderData() as IAnimalExt;
 
   const [lastFed, setLastFed] = useState(animal.lastFed);

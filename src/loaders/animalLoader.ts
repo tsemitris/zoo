@@ -5,6 +5,7 @@ import { getStoredAnimals } from "../utils/getStoredAnimals";
 export const animalLoader = async ({
   params,
 }: IAnimalLoader): Promise<IAnimalExt | null> => {
+  window.scrollTo(0, 0);
   const animals = await getStoredAnimals();
 
   if (!animals) {
