@@ -1,10 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IAnimalExt } from "../../models/IAnimalExt";
 import { getStoredAnimals } from "../../utils/getStoredAnimals";
 import { Link } from "react-router-dom";
+import { scrollNext, scrollPrevious } from "../../utils/scrollButtons";
+import { LatestUpdate } from "../../components/LatestUpdate";
 
 export const Home = () => {
   const [animals, setAnimals] = useState<IAnimalExt[]>([]);
+  const itemsContainerRef = useRef<HTMLDivElement>(null);
+  const itemsContainerRef2 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchAnimals = async () => {
@@ -30,32 +34,68 @@ export const Home = () => {
           </p>
         </div>
       </section>
+
+      {/* Senaste */}
       <section className="scroll-boxes-section">
-        <p>Våra djur</p>
+        <p className="section-title">Senaste</p>
         <div className="scrollable-container">
-          <div className="items-container">
-            {animals.map((animal) => (
-              <Link
-                key={animal.id}
-                to={`/animal/${animal.id}`}
-                style={{ backgroundImage: `url(${animal.imageUrl})` }}
-                className="animal-container"
-              >
-                <h3>{animal.name}</h3>
-              </Link>
-            ))}
-            <div className="animal-container">
-              <h3>test</h3>
-            </div>
+          <div className="items-container" ref={itemsContainerRef}>
+            <LatestUpdate
+              image="/images/hawk-on-a-branch.jpg"
+              title="Halloween Med Nattens Mystiska Djur"
+              date="31 oktober 2024"
+            ></LatestUpdate>
+
+            <LatestUpdate
+              image="/images/monkey.jpg"
+              title="Utbildningsresurser För Lärare och Studenter"
+              date="10 oktober 2024"
+            ></LatestUpdate>
+
+            <LatestUpdate
+              image="/images/whale-breach.jpg"
+              title="Marina Djur Ansluter Till Vår Digitala Zoo"
+              date="1 oktober 2024"
+            ></LatestUpdate>
+
+            <LatestUpdate
+              image="/images/fieldfare-tree.jpg"
+              title="Fågelmigration – En Virtuell Fågelexpedition"
+              date="29 september 2024"
+            ></LatestUpdate>
+
+            <LatestUpdate
+              image="/images/herd-of-wildebeest.jpg"
+              title="Virtuell Safari: Upptäck Afrikas Djur"
+              date="15 september 2024"
+            ></LatestUpdate>
+
+            <Link to={"/"} className="data-container">
+              <div className="see-more-container">
+                <p className="see-more-text">
+                  Se mer
+                  <span className="arrow-icon"></span>
+                </p>
+              </div>
+            </Link>
           </div>
-          <div className="scroll-previous-btn">
+          <div
+            className="scroll-previous-btn"
+            onClick={() => scrollPrevious(itemsContainerRef)}
+          >
             <button className="previous-btn">Previous picture</button>
           </div>
           <div className="scroll-next-btn">
-            <button className="next-btn">Next picture</button>
+            <button
+              className="next-btn"
+              onClick={() => scrollNext(itemsContainerRef)}
+            >
+              Next picture
+            </button>
           </div>
         </div>
       </section>
+
       {/* About us */}
       <section className="info-section">
         <div className="info-container">
@@ -68,10 +108,55 @@ export const Home = () => {
         </div>
         <div className="info-image"></div>
       </section>
-      {/*  */}
+
+      {/* Our animals */}
       <section className="scroll-boxes-section">
-        <h3>hehe</h3>
+        <p className="section-title">Våra djur</p>
+        <div className="scrollable-container">
+          <div className="items-container" ref={itemsContainerRef2}>
+            {animals.map((animal) => (
+              <Link
+                key={animal.id}
+                to={`/animal/${animal.id}`}
+                className="data-container"
+              >
+                <img
+                  className="data-image"
+                  src={animal.imageUrl}
+                  alt={animal.latinName}
+                  width={50}
+                  height={50}
+                  loading="lazy"
+                />
+                <p className="data-name">{animal.name}</p>
+              </Link>
+            ))}
+            <Link to={"/animals"} className="data-container">
+              <div className="see-more-container">
+                <p className="see-more-text">
+                  Se mer
+                  <span className="arrow-icon"></span>
+                </p>
+              </div>
+            </Link>
+          </div>
+          <div
+            className="scroll-previous-btn"
+            onClick={() => scrollPrevious(itemsContainerRef2)}
+          >
+            <button className="previous-btn">Previous picture</button>
+          </div>
+          <div className="scroll-next-btn">
+            <button
+              className="next-btn"
+              onClick={() => scrollNext(itemsContainerRef2)}
+            >
+              Next picture
+            </button>
+          </div>
+        </div>
       </section>
+
       {/* Review */}
       <section className="info-section">
         <div className="info-container">
