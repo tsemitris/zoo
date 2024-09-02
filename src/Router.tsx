@@ -10,11 +10,13 @@ import { animalLoader } from "./loaders/animalLoader";
 import { Animal } from "./pages/Animal/animal";
 import { AboutUs } from "./pages/AboutUs/aboutUs";
 import { FAQ } from "./pages/FAQ/FAQ";
+import { NotFound } from "./pages/NotFound/notFound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement: <NotFound></NotFound>,
     children: [
       {
         path: "/",
