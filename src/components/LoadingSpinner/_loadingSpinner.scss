@@ -1,0 +1,27 @@
+.loader {
+  grid-column: span 6;
+  width: 31.25rem;
+  height: 18.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    width: 4.688rem;
+    height: 4.688rem;
+    border: 0.938rem solid #b3b3b3;
+    border-top-color: #003049;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}

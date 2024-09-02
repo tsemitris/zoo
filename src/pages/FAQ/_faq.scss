@@ -1,0 +1,65 @@
+.faq-section {
+  margin: 3.25rem auto 6.25rem auto;
+  width: 40vw;
+
+  .page-title {
+    // Style is on the global.scss file
+  }
+
+  .faq-image-container {
+    margin: 1.875rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #f3f3f3;
+
+    .faq-image {
+      margin: 0 auto;
+      max-height: 35.625rem;
+    }
+  }
+
+  .faq-container {
+    margin-bottom: 30px;
+
+    .question-container {
+      background-color: #eeeeee;
+      border-top: 5px solid #003049;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      .question {
+        font-weight: 500;
+      }
+
+      .question-expand-arrow {
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        mask-image: url("/icons/Arrow.svg");
+        mask-position: center center;
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        transform: rotate(270deg);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+      }
+      .question-expand {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    .answer-container {
+      background-color: #f3f3f3;
+      font-weight: 400;
+      padding: 0 10px;
+      height: 0;
+      overflow: hidden;
+    }
+    .answer-container-expand {
+      padding: 10px 10px;
+      height: fit-content;
+    }
+  }
+}

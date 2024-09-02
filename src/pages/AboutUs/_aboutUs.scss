@@ -1,0 +1,34 @@
+.about-us-section {
+  margin: 3.25rem auto 6.25rem auto;
+  width: 40vw;
+
+  .page-title {
+    // Style is on the global.scss file
+  }
+
+  .about-us-image-container {
+    margin: 1.875rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #f3f3f3;
+
+    .about-us-image {
+      margin: 0 auto;
+      max-height: 35.625rem;
+    }
+  }
+
+  .about-us-container {
+    padding: 0 2vw;
+
+    .about-us-title {
+      font-weight: 400;
+      font-size: 2rem;
+      margin: 2rem 0 10px 0;
+    }
+
+    .about-us-text {
+      font-size: 1rem;
+    }
+  }
+}

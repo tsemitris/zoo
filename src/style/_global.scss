@@ -1,0 +1,67 @@
+// Button style
+.global-btn {
+  background-color: #003049;
+  padding: 0 1.25rem;
+  text-decoration: none;
+  color: white;
+  width: 9.375rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.625rem;
+  border: none;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(0.98);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+.global-btn-inactive {
+  background-color: #444444;
+  cursor: not-allowed;
+
+  &:hover {
+    transform: none;
+  }
+}
+
+// Used in About us / FAQ
+.go-back-btn {
+  position: relative;
+  left: -10px;
+  background-color: transparent;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .go-back-icon {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    margin-right: 10px;
+    mask-image: url("/icons/Arrow.svg");
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    transform: rotate(-180deg);
+  }
+}
+
+.page-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.05rem;
+  font-size: 2.5rem;
+  margin: 1.25rem 0 0 0;
+}

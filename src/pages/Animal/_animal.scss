@@ -1,0 +1,92 @@
+.animal-main {
+  margin: 3.25rem auto 6.25rem auto;
+  width: 40vw;
+  font-size: 1.1rem;
+
+  .breadcrumb {
+    position: relative;
+    left: -1.875rem;
+
+    .breadcrumb-item {
+      text-transform: none;
+      color: #003049;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .breadcrumb-active {
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+  }
+
+  .animal-name,
+  .animal-latin-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.05rem;
+  }
+
+  .animal-name {
+    font-size: 2.5rem;
+    margin: 1.25rem 0 0.625rem 0;
+  }
+
+  .animal-latin-name {
+    font-size: 1.5rem;
+  }
+
+  .animal-image-container {
+    margin: 1.875rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #f3f3f3;
+
+    .animal-image {
+      margin: 0 auto;
+      max-height: 35.625rem;
+    }
+  }
+
+  .animal-info-container {
+    .animal-info {
+      display: inline-block;
+      width: 50%;
+      margin: 0 0 1.25rem 0;
+
+      .info-title {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .animal-fed-info {
+    margin-top: 2.5rem;
+    background-color: #f3f3f3;
+    padding: 1.25rem 0.625rem;
+    border-top: 0.313rem solid #003049;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .animal-last-fed-splitter {
+      display: inline-block;
+      width: 50%;
+
+      .fed-title,
+      .fed-data {
+        display: block;
+      }
+
+      .fed-title {
+        font-weight: 600;
+      }
+    }
+
+    .fed-animal-btn-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.message-contaienr {
+  grid-column: span 6;
+
+  .avatar {
+    height: 31.25rem;
+  }
+  .message {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 1.875rem;
+    text-align: center;
+  }
+}
