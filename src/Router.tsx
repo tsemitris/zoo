@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "./pages/Layouts/Website/layout";
 import { AnimalsLayout } from "./pages/Layouts/Animals/AnimalsLayout";
+import { NotFound } from "./pages/NotFound/notFound";
 import { Home } from "./pages/Home/home";
 import { Animals } from "./pages/Animals/animals";
 import { fedAnimalsStatusLoader } from "./loaders/fedAnimalsStatusLoader";
@@ -10,7 +11,7 @@ import { animalLoader } from "./loaders/animalLoader";
 import { Animal } from "./pages/Animal/animal";
 import { AboutUs } from "./pages/AboutUs/aboutUs";
 import { FAQ } from "./pages/FAQ/FAQ";
-import { NotFound } from "./pages/NotFound/notFound";
+import { ContactUs } from "./pages/ContactUs/contactUs";
 
 export const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
       {
         path: "/faq",
         element: <FAQ></FAQ>,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs></ContactUs>,
       },
     ],
   },

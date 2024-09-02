@@ -18,6 +18,9 @@ export const Header = () => {
           <NavLink className="nav-link" to={"/faq"}>
             Vanliga frågor
           </NavLink>
+          <NavLink className="nav-link" to={"/contact-us"}>
+            Kontakta oss
+          </NavLink>
         </nav>
       </header>
     </>
