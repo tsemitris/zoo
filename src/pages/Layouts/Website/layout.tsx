@@ -84,7 +84,7 @@ export const Layout = () => {
                     className="contact-us-icon"
                   />
                   <p className="contact-us-info">
-                    Zoo, Safari Street 123, Stockholm, Sverige
+                    Zoo, Safari Gatan 123, Stockholm, Sverige
                   </p>
                 </div>
                 <div className="contact-us-info-container">
