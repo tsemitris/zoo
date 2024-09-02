@@ -77,7 +77,7 @@ export const Footer = () => {
                     className="contact-us-icon"
                   />
                   <a
-                    href="mailto:info@digitalzoo.com"
+                    href="mailto:info@zoo.com"
                     className="contact-us-info contact-us-email"
                   >
                     info@zoo.com
@@ -157,7 +157,7 @@ export const Footer = () => {
               <Link className="category-link" to={"/faq"}>
                 Vanliga Frågor (FAQ)
               </Link>
-              <Link className="category-link" to={"/"}>
+              <Link className="category-link" to={"/contact-us"}>
                 Kontakta Oss
               </Link>
             </section>
