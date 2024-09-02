@@ -100,7 +100,7 @@ export const Layout = () => {
                     href="mailto:info@digitalzoo.com"
                     className="contact-us-info contact-us-email"
                   >
-                    info@digitalzoo.com
+                    info@zoo.com
                   </a>
                 </div>
                 <div className="contact-us-info-container">
@@ -185,10 +185,10 @@ export const Layout = () => {
             <section className="category-container">
               <section className="category-hr">
                 <p className="category-short-text">
-                  Digitala Zoot är Sveriges första digitala djurpark som
-                  erbjuder interaktiva upplevelser och utbildning om världens
-                  djur och deras livsmiljöer. Utforska, lär och interagera med
-                  djur från hela världen – direkt från ditt hem.
+                  Zoo är Sveriges första digitala djurpark som erbjuder
+                  interaktiva upplevelser och utbildning om världens djur och
+                  deras livsmiljöer. Utforska, lär och interagera med djur från
+                  hela världen – direkt från ditt hem.
                 </p>
               </section>
               <section className="category-hr">
