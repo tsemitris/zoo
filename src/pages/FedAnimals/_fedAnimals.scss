@@ -2,12 +2,12 @@
   grid-column: span 6;
 
   .avatar {
-    height: 31.25rem;
+    height: toRem(500);
   }
   .message {
-    margin-top: 20px;
+    margin-top: toRem(20);
     font-weight: 300;
-    font-size: 1.875rem;
+    font-size: toRem(30);
     text-align: center;
   }
 }

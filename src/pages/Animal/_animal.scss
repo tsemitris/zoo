@@ -1,11 +1,11 @@
 .animal-main {
-  margin: 3.25rem auto 6.25rem auto;
+  margin: toRem(52) auto toRem(100) auto;
   width: 40vw;
-  font-size: 1.1rem;
+  font-size: toRem(17.6);
 
   .breadcrumb {
     position: relative;
-    left: -1.875rem;
+    left: toRem(-30);
 
     .breadcrumb-item {
       text-transform: none;
@@ -16,7 +16,7 @@
 
     .breadcrumb-active {
       text-transform: uppercase;
-      font-size: 1rem;
+      font-size: toRem(16);
     }
   }
 
@@ -25,27 +25,27 @@
     text-transform: uppercase;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
-    letter-spacing: -0.05rem;
+    letter-spacing: toRem(-0.8);
   }
 
   .animal-name {
-    font-size: 2.5rem;
-    margin: 1.25rem 0 0.625rem 0;
+    font-size: toRem(40);
+    margin: toRem(20) 0 toRem(10) 0;
   }
 
   .animal-latin-name {
-    font-size: 1.5rem;
+    font-size: toRem(24);
   }
 
   .animal-image-container {
-    margin: 1.875rem 0;
-    border-radius: 1rem;
+    margin: toRem(30) 0;
+    border-radius: toRem(1);
     overflow: hidden;
     background-color: #f3f3f3;
 
     .animal-image {
       margin: 0 auto;
-      max-height: 35.625rem;
+      max-height: toRem(570);
     }
   }
 
@@ -53,7 +53,7 @@
     .animal-info {
       display: inline-block;
       width: 50%;
-      margin: 0 0 1.25rem 0;
+      margin: 0 0 toRem(20) 0;
 
       .info-title {
         font-weight: 600;
@@ -62,10 +62,10 @@
   }
 
   .animal-fed-info {
-    margin-top: 2.5rem;
+    margin-top: toRem(40);
     background-color: #f3f3f3;
-    padding: 1.25rem 0.625rem;
-    border-top: 0.313rem solid #003049;
+    padding: toRem(20) toRem(10);
+    border-top: toRem(5) solid #003049;
     display: flex;
     flex-direction: row;
     align-items: center;

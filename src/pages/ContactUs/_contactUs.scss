@@ -1,10 +1,10 @@
 .contact-us-image-container {
-  height: 500px;
+  height: toRem(500);
   position: relative;
 }
 
 .contact-us-section {
-  margin: 3.25rem auto 6.25rem auto;
+  margin: toRem(52) auto toRem(100) auto;
   width: 40vw;
 
   .page-title {
@@ -12,13 +12,13 @@
   }
 
   .contact-us-image-container {
-    margin: 1.875rem 0;
-    border-radius: 1rem;
+    margin: toRem(30) 0;
+    border-radius: toRem(16);
     overflow: hidden;
     background-color: #f3f3f3;
 
     .conctact-us-image {
-      max-height: 35.625rem;
+      max-height: toRem(570);
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -29,7 +29,7 @@
     padding: 0 2vw;
 
     .page-text {
-      margin-bottom: 30px;
+      margin-bottom: toRem(30);
     }
 
     .contact-methods-container {
@@ -39,28 +39,28 @@
 
         .half-container {
           width: 50%;
-          margin: 0 20px 30px 0;
+          margin: 0 toRem(20) toRem(30) 0;
 
           &:last-child {
-            margin: 0 0 30px 0;
+            margin: 0 0 toRem(30) 0;
           }
 
           .container-title {
             background-color: #eee;
-            border-top: 5px solid #003049;
-            padding: 10px;
+            border-top: toRem(5) solid #003049;
+            padding: toRem(10);
             display: flex;
             align-items: center;
             font-weight: 600;
 
             .title-icon {
               background-color: black;
-              width: 20px;
-              height: 20px;
+              width: toRem(20);
+              height: toRem(20);
               mask-size: cover;
               mask-repeat: no-repeat;
               mask-position: center center;
-              margin-right: 10px;
+              margin-right: toRem(10);
             }
 
             .phone {
@@ -81,7 +81,7 @@
           }
 
           .container-info {
-            padding: 10px;
+            padding: toRem(10);
 
             .info-line {
               .bold-text {
@@ -100,9 +100,9 @@
           }
 
           .social-media-icon {
-            width: 30px;
-            height: 30px;
-            margin-right: 20px;
+            width: toRem(30);
+            height: toRem(30);
+            margin-right: toRem(20);
             display: inline-block;
             transform: scale(1);
             transition: transform 0.3s ease-in-out;

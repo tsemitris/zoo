@@ -1,15 +1,15 @@
 // Button style
 .global-btn {
   background-color: #003049;
-  padding: 0 1.25rem;
+  padding: 0 toRem(20);
   text-decoration: none;
   color: white;
-  width: 9.375rem;
-  height: 2.5rem;
+  width: toRem(150);
+  height: toRem(40);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
+  border-radius: toRem(10);
   border: none;
   cursor: pointer;
   transform: scale(1);
@@ -32,7 +32,7 @@
 // Used in About us / FAQ
 .go-back-btn {
   position: relative;
-  left: -10px;
+  left: toRem(-10);
   background-color: transparent;
   appearance: none;
   border: 0;
@@ -45,10 +45,10 @@
   }
 
   .go-back-icon {
-    width: 20px;
-    height: 20px;
+    width: toRem(20);
+    height: toRem(20);
     background-color: black;
-    margin-right: 10px;
+    margin-right: toRem(10);
     mask-image: url("/icons/Arrow.svg");
     mask-position: center center;
     mask-repeat: no-repeat;
@@ -61,7 +61,7 @@
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
-  letter-spacing: -0.05rem;
-  font-size: 2.5rem;
-  margin: 1.25rem 0 0 0;
+  letter-spacing: toRem(-0.8);
+  font-size: toRem(40);
+  margin: toRem(1, 25) 0 0 0;
 }

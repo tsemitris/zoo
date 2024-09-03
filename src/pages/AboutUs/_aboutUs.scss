@@ -1,5 +1,5 @@
 .about-us-section {
-  margin: 3.25rem auto 6.25rem auto;
+  margin: toRem(52) auto toRem(100) auto;
   width: 40vw;
 
   .page-title {
@@ -7,14 +7,14 @@
   }
 
   .about-us-image-container {
-    margin: 1.875rem 0;
-    border-radius: 1rem;
+    margin: toRem(30) 0;
+    border-radius: toRem(16);
     overflow: hidden;
     background-color: #f3f3f3;
 
     .about-us-image {
       margin: 0 auto;
-      max-height: 35.625rem;
+      max-height: toRem(570);
     }
   }
 
@@ -23,12 +23,12 @@
 
     .about-us-title {
       font-weight: 400;
-      font-size: 2rem;
-      margin: 2rem 0 10px 0;
+      font-size: toRem(32);
+      margin: toRem(32) 0 toRem(10) 0;
     }
 
     .about-us-text {
-      font-size: 1rem;
+      font-size: toRem(16);
     }
   }
 }

@@ -1,5 +1,5 @@
 .video-container {
-  height: 15.625rem;
+  height: toRem(250);
   position: relative;
 
   .animals-header {
@@ -14,7 +14,7 @@
     align-items: center;
 
     .animals-title {
-      font-size: 3rem;
+      font-size: toRem(48);
       font-weight: 300;
       height: 100%;
       display: flex;
@@ -26,9 +26,9 @@
       .nav-option {
         background-color: transparent;
         display: inline-block;
-        padding: 1.25rem 1.875rem;
+        padding: toRem(20) toRem(30);
         border: none;
-        border-radius: 0.625rem 0.625rem 0 0;
+        border-radius: toRem(10) toRem(10) 0 0;
         font-weight: 500;
         text-decoration: none;
         color: #e9e9e9;
@@ -62,9 +62,9 @@
 }
 
 .animals-container {
-  margin: 6.25rem auto;
+  margin: toRem(100) auto;
   width: fit-content;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 1rem;
+  gap: toRem(16);
 }

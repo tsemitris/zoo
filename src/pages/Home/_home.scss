@@ -1,5 +1,5 @@
 .welcome-video-container {
-  height: 700px;
+  height: toRem(700);
   position: relative;
 
   .welcome-video {
@@ -21,12 +21,12 @@
     color: white;
 
     .title {
-      font-size: 5rem;
+      font-size: toRem(80);
       font-weight: 400;
     }
 
     .under-text {
-      font-size: 1.3rem;
+      font-size: toRem(20.8);
       font-weight: 300;
     }
   }
@@ -39,13 +39,13 @@
   .section-title,
   .scrollable-container {
     margin: 0 auto;
-    width: 874px;
+    width: toRem(874);
   }
 
   .section-title {
-    font-size: 1.5rem;
+    font-size: toRem(24);
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: toRem(20);
   }
 
   .scrollable-container {
@@ -55,8 +55,8 @@
     .items-container {
       display: grid;
       width: 100%;
-      grid-template-columns: repeat(12, 5.95rem);
-      gap: 1rem;
+      grid-template-columns: repeat(12, toRem(95.2));
+      gap: toRem(16);
       overflow-x: scroll;
       scrollbar-width: none;
       transform: skewX(5deg);
@@ -64,9 +64,9 @@
       .data-container {
         grid-column: span 2;
         background-color: #f3f3f3;
-        height: 300px;
+        height: toRem(300);
         overflow: hidden;
-        border-radius: 1rem;
+        border-radius: toRem(16);
         display: flex;
         flex-direction: column;
         text-decoration: none;
@@ -91,7 +91,7 @@
           display: flex;
           justify-content: center;
           color: black;
-          font-size: 1.2rem;
+          font-size: toRem(19.2);
         }
 
         .data-title {
@@ -112,7 +112,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 1.2rem;
+          font-size: toRem(19.2);
 
           &:hover {
             .see-more-text {
@@ -127,8 +127,8 @@
 
             .arrow-icon {
               background-color: black;
-              width: 25px;
-              height: 25px;
+              width: toRem(25);
+              height: toRem(25);
               display: inline-block;
               mask-image: url("/icons/Arrow.svg");
               mask-repeat: no-repeat;
@@ -149,11 +149,11 @@
     }
 
     .scroll-previous-btn {
-      left: -20px;
+      left: toRem(-20);
 
       .previous-btn {
-        height: 40px;
-        width: 40px;
+        height: toRem(40);
+        width: toRem(40);
         background-image: url("/icons/Arrow.svg");
         background-position: center center;
         background-repeat: no-repeat;
@@ -168,11 +168,11 @@
     }
 
     .scroll-next-btn {
-      right: -20px;
+      right: toRem(-20);
 
       .next-btn {
-        height: 40px;
-        width: 40px;
+        height: toRem(40);
+        width: toRem(40);
         background-image: url("/icons/Arrow.svg");
         background-position: center center;
         background-repeat: no-repeat;
@@ -188,24 +188,24 @@
 }
 
 .info-section {
-  height: 1000px;
+  height: toRem(1000);
   position: relative;
   display: flex;
   align-items: center;
 
   .info-container {
-    width: 600px;
+    width: toRem(600);
     background-color: #003049;
     color: white;
-    padding: 50px 60px;
+    padding: toRem(50) toRem(60);
     margin: 0 10vw;
-    font-size: 1.3rem;
+    font-size: toRem(20.8);
     font-weight: 300;
     hyphens: auto;
     position: absolute;
 
     .info-writter {
-      margin-top: 20px;
+      margin-top: toRem(20);
       display: block;
     }
   }

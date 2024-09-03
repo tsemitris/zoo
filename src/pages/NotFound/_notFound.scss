@@ -1,21 +1,21 @@
 .not-found-container {
-  margin: 3.25rem auto 6.25rem auto;
+  margin: toRem(52) auto toRem(100) auto;
   width: 40vw;
-  font-size: 1.1rem;
+  font-size: toRem(17.6);
 
   .not-found-title {
-    font-size: 1.5rem;
+    font-size: toRem(24);
     font-weight: 600;
-    margin: 20px 0;
+    margin: toRem(20) 0;
   }
 
   .not-found-message {
     background-color: #f3f3f3;
-    padding: 1.5rem;
-    border-top: 5px solid #003049;
+    padding: toRem(24);
+    border-top: toRem(5) solid #003049;
 
     .not-found-text {
-      margin-top: 20px;
+      margin-top: toRem(20);
       hyphens: auto;
 
       &:first-child {

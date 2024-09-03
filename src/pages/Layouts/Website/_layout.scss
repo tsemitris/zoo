@@ -4,9 +4,9 @@ header {
   position: fixed;
   z-index: 50;
   background-color: white;
-  border-bottom: 1px solid black;
+  border-bottom: toRem(1) solid black;
   color: #003049;
-  padding: 0.313rem 5vw;
+  padding: toRem(5) 5vw;
   display: flex;
   align-items: center;
 
@@ -15,16 +15,16 @@ header {
   }
 
   .nav-bar {
-    margin-left: 50px;
+    margin-left: toRem(50);
 
     .nav-link {
       height: 100%;
       color: #003049;
       font-weight: 400;
-      margin-right: 15px;
-      padding: 5px;
+      margin-right: toRem(15);
+      padding: toRem(5);
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: toRem(17.6);
     }
   }
 }
@@ -51,8 +51,8 @@ footer {
       align-items: center;
 
       .newsletter-icon {
-        width: 100px;
-        height: 100px;
+        width: toRem(100);
+        height: toRem(100);
         mask-image: url("/icons/Mail.svg");
         mask-size: contain;
         mask-repeat: no-repeat;
@@ -63,26 +63,26 @@ footer {
         text-transform: uppercase;
         color: #003049;
         font-weight: 700;
-        font-size: 20px;
+        font-size: toRem(20);
         position: relative;
-        top: -10px;
+        top: toRem(-10);
       }
 
       .newsletter-info {
-        margin: 30px 0;
-        max-width: 600px;
+        margin: toRem(30) 0;
+        max-width: toRem(600);
         color: rgb(41, 41, 41);
-        font-size: 24px;
+        font-size: toRem(24);
       }
 
       .newsletter-form {
-        margin-top: 20px;
+        margin-top: toRem(20);
 
         .newsletter-form-email {
-          width: 9.375rem;
-          height: 2.5rem;
-          padding: 0.5rem;
-          width: 15rem;
+          width: toRem(150);
+          height: toRem(40);
+          padding: toRem(8);
+          width: toRem(240);
           border: 0;
           appearance: none;
           display: inline-block;
@@ -97,7 +97,7 @@ footer {
         }
 
         .newsletter-submit-button {
-          width: 6.375rem;
+          width: toRem(102);
           border-radius: 0;
           display: inline-block;
 
@@ -111,25 +111,25 @@ footer {
 
   .footer-link-container {
     background-color: #003049;
-    padding: 1.5rem 10vw;
+    padding: toRem(24) 10vw;
     display: flex;
     flex-direction: column;
 
     .footer-logo {
-      width: 200px;
+      width: toRem(200);
     }
 
     .footer-upper-container {
       display: flex;
       flex-direction: row;
-      padding: 60px 55px;
+      padding: toRem(60) toRem(55);
 
       .category-container {
         flex: 1;
 
         .category-title,
         .category-link {
-          font-size: 20px;
+          font-size: toRem(20);
           color: white;
           display: block;
         }
@@ -139,7 +139,7 @@ footer {
         }
 
         .category-link {
-          margin-top: 20px;
+          margin-top: toRem(20);
           font-weight: 300;
           text-decoration: none;
           width: fit-content;
@@ -151,7 +151,7 @@ footer {
 
         .category-hr {
           display: block;
-          margin-top: 40px;
+          margin-top: toRem(40);
 
           &:first-child {
             margin-top: 0;
@@ -159,21 +159,21 @@ footer {
 
           .category-title {
             font-weight: 600;
-            font-size: 20px;
+            font-size: toRem(20);
             color: white;
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: toRem(20);
           }
 
           .category-short-text {
             font-weight: 300;
-            margin-bottom: 20px;
+            margin-bottom: toRem(20);
           }
 
           .category-icon {
-            width: 30px;
-            height: 30px;
-            margin-right: 20px;
+            width: toRem(30);
+            height: toRem(30);
+            margin-right: toRem(20);
             display: inline-block;
             transform: scale(1);
             transition: transform 0.3s ease-in-out;
@@ -186,18 +186,18 @@ footer {
           }
 
           .contact-us-info-container {
-            margin-top: 10px;
+            margin-top: toRem(10);
             display: flex;
             align-items: center;
 
             .contact-us-icon {
-              width: 30px;
-              height: 30px;
+              width: toRem(30);
+              height: toRem(30);
             }
 
             .contact-us-info {
-              margin-left: 10px;
-              width: 200px;
+              margin-left: toRem(10);
+              width: toRem(200);
               color: white;
               font-weight: 300;
               text-decoration: none;
@@ -214,14 +214,14 @@ footer {
             width: fit-content;
             object-fit: cover;
             display: inline-block;
-            margin-right: 20px;
+            margin-right: toRem(20);
           }
         }
       }
     }
 
     .footer-lower-container {
-      padding: 0 55px;
+      padding: 0 toRem(55);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -232,7 +232,7 @@ footer {
       }
 
       .footer-options {
-        margin: 30px 0;
+        margin: toRem(30) 0;
         .option {
           background-color: transparent;
           border: none;
@@ -242,7 +242,7 @@ footer {
           appearance: none;
           color: white;
           font-weight: 300;
-          margin-right: 20px;
+          margin-right: toRem(20);
           cursor: pointer;
 
           &:hover {
@@ -253,7 +253,7 @@ footer {
 
       .footer-text {
         font-weight: 300;
-        font-size: 0.8rem;
+        font-size: toRem(12.8);
       }
     }
   }
