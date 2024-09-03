@@ -25,7 +25,7 @@ export const Home = () => {
       {/* Video section */}
       <section className="welcome-video-container">
         <video autoPlay playsInline loop className="welcome-video">
-          <source src="/videos/zooGiraffe.mp4" type="video/mp4" />
+          <source src="./videos/zooGiraffe.mp4" type="video/mp4" />
         </video>
         <div className="welcome-message">
           <p className="title">Välkommen till Zoo</p>
@@ -41,31 +41,31 @@ export const Home = () => {
         <div className="scrollable-container">
           <div className="items-container" ref={itemsContainerRef}>
             <LatestUpdate
-              image="/images/hawk-on-a-branch.jpg"
+              image="./images/hawk-on-a-branch.jpg"
               title="Halloween Med Nattens Mystiska Djur"
               date="31 oktober 2024"
             ></LatestUpdate>
 
             <LatestUpdate
-              image="/images/monkey.jpg"
+              image="./images/monkey.jpg"
               title="Utbildningsresurser För Lärare och Studenter"
               date="10 oktober 2024"
             ></LatestUpdate>
 
             <LatestUpdate
-              image="/images/whale-breach.jpg"
+              image="./images/whale-breach.jpg"
               title="Marina Djur Ansluter Till Vår Digitala Zoo"
               date="1 oktober 2024"
             ></LatestUpdate>
 
             <LatestUpdate
-              image="/images/fieldfare-tree.jpg"
+              image="./images/fieldfare-tree.jpg"
               title="Fågelmigration – En Virtuell Fågelexpedition"
               date="29 september 2024"
             ></LatestUpdate>
 
             <LatestUpdate
-              image="/images/herd-of-wildebeest.jpg"
+              image="./images/herd-of-wildebeest.jpg"
               title="Virtuell Safari: Upptäck Afrikas Djur"
               date="15 september 2024"
             ></LatestUpdate>

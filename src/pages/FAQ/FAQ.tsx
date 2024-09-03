@@ -13,7 +13,7 @@ export const FAQ = () => {
         <p className="page-title">Vanliga frågor</p>
         <div className="faq-image-container">
           <img
-            src="/images/brown-bear-and-baby.jpg"
+            src="./images/brown-bear-and-baby.jpg"
             alt="brown bear and baby bear on gray concrete wall during daytime"
             loading="lazy"
             className="faq-image"

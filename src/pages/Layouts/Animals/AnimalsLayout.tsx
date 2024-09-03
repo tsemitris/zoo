@@ -33,7 +33,7 @@ export const AnimalsLayout = () => {
           </div>
         </div>
         <video autoPlay playsInline>
-          <source src="/videos/zooPenguins.mp4" type="video/mp4" />
+          <source src="./videos/zooPenguins.mp4" type="video/mp4" />
         </video>
       </section>
       <section className="animals-container">

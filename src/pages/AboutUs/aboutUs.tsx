@@ -10,7 +10,7 @@ export const AboutUs = () => {
         <p className="page-title">Om oss</p>
         <div className="about-us-image-container">
           <img
-            src="/images/women-feeding-giraffes.jpg"
+            src="./images/women-feeding-giraffes.jpg"
             alt="flock of flamigos"
             loading="lazy"
             className="about-us-image"
