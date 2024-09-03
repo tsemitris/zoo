@@ -11,7 +11,7 @@ export const FedAnimals = () => {
         <section className="message-contaienr">
           <img
             className="avatar"
-            src="/images/sadAnimal.svg"
+            src="./images/sadAnimal.svg"
             alt="A sad dog with orange shirt and pants"
           />
           <p className="message">Inga matade djur hittades!</p>

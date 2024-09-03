@@ -12,7 +12,7 @@ export const ContactUs = () => {
 
         <div className="contact-us-image-container">
           <img
-            src="/images/women-in-aquarium.jpg"
+            src="./images/women-in-aquarium.jpg"
             alt="Person silhouetted against an aquarium, observing various colorful fish and coral."
             width={50}
             height={50}

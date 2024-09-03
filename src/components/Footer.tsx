@@ -43,7 +43,7 @@ export const Footer = () => {
         {/* Footer */}
         <section className="footer-link-container">
           <img
-            src="/logo/zooLogoWhite.svg"
+            src="./logo/zooLogoWhite.svg"
             width={100}
             height={100}
             loading="lazy"
@@ -56,7 +56,7 @@ export const Footer = () => {
                 <p className="category-title">Kontaktinformation</p>
                 <div className="contact-us-info-container">
                   <img
-                    src="/icons/Location-pin.svg"
+                    src="./icons/Location-pin.svg"
                     width={50}
                     height={50}
                     alt="illustration of a envelope"
@@ -69,7 +69,7 @@ export const Footer = () => {
                 </div>
                 <div className="contact-us-info-container">
                   <img
-                    src="/icons/Mail.svg"
+                    src="./icons/Mail.svg"
                     width={50}
                     height={50}
                     alt="illustration of a envelope"
@@ -85,7 +85,7 @@ export const Footer = () => {
                 </div>
                 <div className="contact-us-info-container">
                   <img
-                    src="/icons/Phone.svg"
+                    src="./icons/Phone.svg"
                     width={50}
                     height={50}
                     alt="illustration of a phone"
@@ -98,7 +98,7 @@ export const Footer = () => {
               <section className="category-hr">
                 <p className="category-title">Sociala Medier</p>
                 <img
-                  src="/icons/Facebook.svg"
+                  src="./icons/Facebook.svg"
                   width={50}
                   height={50}
                   alt="facebook icon"
@@ -106,7 +106,7 @@ export const Footer = () => {
                   className="category-icon"
                 />
                 <img
-                  src="/icons/Twitter.svg"
+                  src="./icons/Twitter.svg"
                   width={50}
                   height={50}
                   alt="twitter icon"
@@ -114,7 +114,7 @@ export const Footer = () => {
                   className="category-icon"
                 />
                 <img
-                  src="/icons/Instagram.svg"
+                  src="./icons/Instagram.svg"
                   width={50}
                   height={50}
                   alt="twitter icon"
@@ -122,7 +122,7 @@ export const Footer = () => {
                   className="category-icon"
                 />
                 <img
-                  src="/icons/TikTok.svg"
+                  src="./icons/TikTok.svg"
                   width={50}
                   height={50}
                   alt="twitter icon"
@@ -130,7 +130,7 @@ export const Footer = () => {
                   className="category-icon"
                 />
                 <img
-                  src="/icons/YouTube.svg"
+                  src="./icons/YouTube.svg"
                   width={50}
                   height={50}
                   alt="twitter icon"
@@ -174,7 +174,7 @@ export const Footer = () => {
               <section className="category-hr">
                 <p className="category-title">Våra samarbetspartner:</p>
                 <img
-                  src="/partner-logo/WWF.svg"
+                  src="./partner-logo/WWF.svg"
                   width={50}
                   height={50}
                   alt="WWF logo"
@@ -182,7 +182,7 @@ export const Footer = () => {
                   className="category-parter-logo"
                 />
                 <img
-                  src="/partner-logo/Nrm.png"
+                  src="./partner-logo/Nrm.png"
                   width={50}
                   height={50}
                   alt="Naturhistoriska Riksmuseet logo"
