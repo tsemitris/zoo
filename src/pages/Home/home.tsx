@@ -6,6 +6,8 @@ import { scrollNext, scrollPrevious } from "../../utils/scrollButtons";
 import { LatestUpdate } from "../../components/LatestUpdate";
 
 export const Home = () => {
+  window.scrollTo(0, 0);
+
   const [animals, setAnimals] = useState<IAnimalExt[]>([]);
   const itemsContainerRef = useRef<HTMLDivElement>(null);
   const itemsContainerRef2 = useRef<HTMLDivElement>(null);

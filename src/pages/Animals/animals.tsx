@@ -5,6 +5,8 @@ import { IAnimalExt } from "../../models/IAnimalExt";
 import { LoadingSpinner } from "../../components/LoadingSpinner/LoadingSpinner";
 
 export const Animals = () => {
+  window.scrollTo(0, 0);
+
   const [animals, setAnimals] = useState<IAnimalExt[]>(
     JSON.parse(sessionStorage.getItem("animals") || "[]")
   );
