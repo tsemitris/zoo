@@ -11,7 +11,7 @@ export const UnfedAnimals = () => {
         <section className="message-contaienr">
           <img
             className="avatar"
-            src="/images/happyAnimal.svg"
+            src="./images/happyAnimal.svg"
             alt="A happy sloth with hands up"
           />
           <p className="message">Inga omatade djur hittades!</p>
