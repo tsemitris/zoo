@@ -89,12 +89,14 @@ The user has the option to feed the animal on its information page. If the anima
 
 The images below are displayed in a smaller size to make it easier to follow the content of this file. To view the full-size images, simply open them in a new window.
 
-<img src="./public/screenshots/landing-page-screenshot.png" width="50" alt="screenshot of landing page">
-<img src="./public/screenshots/animals-page-screenshot.png" width="50" alt="screenshot of animals page">
-<img src="./public/screenshots/animal-page-screenshot.png" width="50" alt="screenshot of animal page">
-<img src="./public/screenshots/about-us-screenshot.png" width="50" alt="screenshot of about us page">
-<img src="./public/screenshots/faq-page-screenshot.png" width="50" alt="screenshot of faq page">
-<img src="./public/screenshots/contact-us-screenshoot.png" width="50" alt="screenshot of contact us page">
+<div>
+    <img src="./public/screenshots/landing-page-screenshot.png" width="50" alt="screenshot of landing page" style="display: inline-block;">
+    <img src="./public/screenshots/animals-page-screenshot.png" width="50" alt="screenshot of animals page" style="display: inline-block;">
+    <img src="./public/screenshots/animal-page-screenshot.png" width="50" alt="screenshot of animal page" style="display: inline-block;">
+    <img src="./public/screenshots/about-us-screenshot.png" width="50" alt="screenshot of about us page" style="display: inline-block;">
+    <img src="./public/screenshots/faq-page-screenshot.png" width="50" alt="screenshot of faq page" style="display: inline-block;">
+    <img src="./public/screenshots/contact-us-screenshoot.png" width="50" alt="screenshot of contact us page" style="display: inline-block;">   
+</div>
 
 <p align="right">
     <a href="#read_me_top">[ back to top ⇡ ]</a>
